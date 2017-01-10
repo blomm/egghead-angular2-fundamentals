@@ -1,11 +1,16 @@
-<h1>
+<!--<h1>
   {{title}}
-</h1>
+</h1>-->
 <div>
-  <app-simple-form></app-simple-form>
+  <ul>
+    <app-simple-form *ngFor="let message of mail.messages" [messageInput]="message">
+      
+    </app-simple-form>
+  </ul>
+  <!--<app-simple-form></app-simple-form>
   {{mail.message}}
   <hr>
-  {{api}}
+  {{api}}-->
 </div>
 
 

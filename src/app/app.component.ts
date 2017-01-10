@@ -17,11 +17,11 @@ import { Component, Inject } from '@angular/core';
 
 export class AppComponent {
   
-  title = 'app2 works!';
+  //title = 'app2 works!';
 
   constructor(
-    @Inject('mail') private mail, 
-    @Inject('api') private api
+    @Inject('mail') private mail
+    //@Inject('api') private api
     ){
 
   }

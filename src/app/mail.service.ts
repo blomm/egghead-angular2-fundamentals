@@ -4,13 +4,13 @@ import { Injectable } from '@angular/core';
 
 export class MailService {
 
-  message = `you've got mail`;
+  //message = `you've got mail`;
 
-  // messages=[
-  //   `you're now friends with me`,
-  //   `i like you`,
-  //   `here's what i said`
-  // ];
+  messages=[
+    `you're now friends with me`,
+    `i like you`,
+    `here's what i said`
+  ];
   constructor() { }
 
 }
