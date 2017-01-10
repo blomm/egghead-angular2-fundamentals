@@ -1,10 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
+//import { MailService } from './mail.service'
+
+
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
+  // template: `
+  //   <div>
+  //     <app-simple-form></app-simple-form>
+  //     {{mail.message}}
+  //   </div>
+  //   `,
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  title = 'app works!';
+  
+  title = 'app2 works!';
+
+  constructor(
+    @Inject('mail') private mail, 
+    @Inject('api') private api
+    ){
+
+  }
 }
